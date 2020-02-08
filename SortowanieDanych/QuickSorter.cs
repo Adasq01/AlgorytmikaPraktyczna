@@ -25,9 +25,8 @@ namespace SortowanieDanych
                     ? array[j] > pivot
                     : array[j] < pivot) j--;
                 if (i > j) continue;
-                // swap
                 var tmp = array[i];
-                array[i++] = array[j]; // ++ and -- inside array braces for shorter code
+                array[i++] = array[j]; 
                 array[j--] = tmp;
             }
 

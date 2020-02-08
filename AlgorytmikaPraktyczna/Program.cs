@@ -100,6 +100,8 @@ namespace AlgorytmikaPraktyczna
                     intArray[j] = random.Next();
                 }
 
+                intArray[n / 2] = 1;
+
                 var watch = new Stopwatch();
                 watch.Restart();
                 sort(intArray);
@@ -108,8 +110,6 @@ namespace AlgorytmikaPraktyczna
                 Console.WriteLine($"Sortowanie {n} elementów zajęło: {watch.Elapsed.TotalSeconds:F} sekund, {watch.Elapsed.TotalMilliseconds:F} milisekund))");
                 n *= 2;
             }
-
-
         }
     }
 }
